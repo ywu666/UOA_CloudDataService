@@ -1,0 +1,11 @@
+.dropbtn {
+    font-size: x-large;
+    background-color: transparent;
+    border: none;
+    cursor:pointer;
+    outline:none;
+}
+
+.dropbtn:hover {
+    background-color: lightgray;
+}
