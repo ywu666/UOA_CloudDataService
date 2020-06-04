@@ -1,5 +1,5 @@
 #mySidebar {
-    background-color: lightblue;
+    background-color: #b3d9ff;
 }
 
 .triangle-right {
@@ -53,7 +53,7 @@
 
 .break {
     height: 2px;
-    background: darkblue;
+    background: #66adff;
     border-width: 0;
     width: 98%;
     margin: auto;
