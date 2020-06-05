@@ -13,6 +13,14 @@ function showOrHideRelatedFiles( buttonId ) {
 }
 
 function hidePopup() {
+	// close the related graph - ensure a fresh start the next time
+	const graph = document.getElementById( "multiple-file" );
+	console.log(graph)
+	console.log(graph.style.display)
+	if( graph.style.display !== "none" ) {
+		showOrHideRelatedFiles( "share-all-file-button" );
+	}
+	console.log(graph.style.display)
 	document.getElementById("share-file-popup").style.display = "none";
 }
 

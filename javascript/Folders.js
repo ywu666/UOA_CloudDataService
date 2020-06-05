@@ -27,7 +27,8 @@ function openFolder( folderButtonId ) {
 		document.getElementById( "softeng350-folder-container" ).style.display = "flex";
 
 		//show files
-		document.getElementById( "softeng-350-file-container" ).style.display = "block";
+		console.log(document.getElementById( "softeng-350-file-section" ));
+		document.getElementById( "softeng-350-file-section" ).style.display = "block";
 	}
 
 }

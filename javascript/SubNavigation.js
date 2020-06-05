@@ -11,12 +11,16 @@ function goToRootDirectory() {
 	document.getElementById( "softeng350-folder-container" ).style.display = "none";
 
 	// hide files
-	document.getElementById( "softeng-350-file-container" ).style.display = "none";
+	document.getElementById( "softeng-350-file-section" ).style.display = "none";
 }
 
 function showFileRelationGraph() {
 	// check which folder users are currently in
+	const files = document.getElementById( "softeng-350-file-section" );
 
-	// display the popup if users are in softeng350 folder
-
+	if( files.style.display !== "none" ) {
+		// display the popup if users are in softeng350 folder
+		document.getElementById( "file-relation-popup" ).style.display = "block";
+		showAllGraphs();
+	}
 }

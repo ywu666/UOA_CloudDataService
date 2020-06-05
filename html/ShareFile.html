@@ -1,6 +1,8 @@
 <!-- Modal that pops up when you click on "Share File" -->
 <div id="share-file-popup" class="w3-modal" style="z-index:4;">
 	<div class="w3-modal-content">
+
+		<!--  title	-->
 		<div class="flex-container" style="justify-content: space-between">
 			<h5>Share with others</h5>
 			<div style="display: flex">
@@ -10,6 +12,7 @@
 		</div>
 
 		<div>
+			<!--	share link		-->
 			<div class="flex-container share-link-container">
 				<div class="link-container">
 					<p style="color: gray; margin: auto 0 auto 10px">Anyone with the link</p>
@@ -22,6 +25,7 @@
 				</button>
 			</div>
 
+			<!--	link message		-->
 			<div class="link-message">
 				<p style="color: grey; margin: 0; text-decoration: underline">
 					https://drive.upi.com/drive/folders/SE350/A3/draft
@@ -30,6 +34,7 @@
 		</div>
 
 		<div>
+			<!--	share related files as well		-->
 			<button id="share-all-file-button" onclick="showOrHideRelatedFiles(this.id)" class="share-file-button">
 				Share all files containing the same tag
 			</button>
@@ -47,6 +52,7 @@
 			<hr class="break" style="margin: 10px 20px; width: auto"; >
 		</div>
 
+		<!--	people to share 	-->
 		<div>
 			<p style="color: grey; margin-left: 20px; margin-bottom: 0">Send link to people</p>
 			<div class="flex-container" style="justify-content: space-between; ">
@@ -58,12 +64,19 @@
 				</select>
 			</div>
 		</div>
+
+		<!--	showing the owner of files	-->
         <div id = "owner" class = "imgContainer">
 			<img src="../resource/owner.jpg" class = "imgOwner">
 			<div class="overlay"></div>
 		</div>
+
+
 		<div class="w3-panel">
+			<!--	share message		-->
 			<input class="w3-input w3-border w3-margin-bottom" style="height:150px" placeholder="Message">
+
+			<!--	share or delete button		-->
 			<div class="w3-section w3-right">
 				<a class="w3-button w3-red" onclick="hidePopup()">Delete</i></a>
 				<a class="w3-button w3-light-grey" onclick="hidePopup()">Share<i class="fa fa-paper-plane" style="margin: auto 5px"></i></a>

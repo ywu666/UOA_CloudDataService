@@ -1,7 +1,5 @@
 function hoverFileImage( fileButtonId ) {
 	const files = document.getElementById( fileButtonId ).getElementsByClassName("file");
-	console.log(files)
-	console.log(files[0]);
 	files[0].style.display = "none";
 	files[1].style.display = "block";
 }
