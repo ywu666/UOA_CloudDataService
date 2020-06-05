@@ -51,18 +51,22 @@
 			<p style="color: grey; margin-left: 20px; margin-bottom: 0">Send link to people</p>
 			<div class="flex-container" style="justify-content: space-between; ">
 				<input id = "email-text-input" type="text" placeholder="Enter names or email address">
-				<button class="w3-button w3-light-grey" style="width: 17%">
-					<i class="fas fa-eye w3-xlarge"></i>
-					<i class="fas fa-sort-down w3-xlarge" style="margin: auto"></i>
-				</button>
+				<select class="w3-select w3-border" name="option" style="width: 17%; background-color: lightgrey; text-align-last:center">
+					<option value="View" style="direction: rtl;">Viewer</option>
+					<option value="comment">Commenter</option>
+					<option value="edit">Editor</option>
+				</select>
 			</div>
 		</div>
-
+        <div id = "owner" class = "imgContainer">
+			<img src="../resource/owner.jpg" class = "imgOwner">
+			<div class="overlay"></div>
+		</div>
 		<div class="w3-panel">
 			<input class="w3-input w3-border w3-margin-bottom" style="height:150px" placeholder="Message">
 			<div class="w3-section w3-right">
 				<a class="w3-button w3-red" onclick="hidePopup()">Delete</i></a>
-				<a class="w3-button w3-light-grey" onclick="hidePopup()">Share<i class="fa fa-paper-plane"></i></a>
+				<a class="w3-button w3-light-grey" onclick="hidePopup()">Share<i class="fa fa-paper-plane" style="margin: auto 5px"></i></a>
 			</div>
 		</div>
 	</div>
