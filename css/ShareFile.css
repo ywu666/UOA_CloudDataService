@@ -87,6 +87,12 @@
     width:100%
 }
 
+.imgOwner{
+    width: 95%;
+    margin-left: 2%;
+}
+
+
 .w3-red:hover{
     background-color: #ff8080 !important;
     color:white !important;
