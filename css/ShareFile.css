@@ -87,30 +87,6 @@
     width:100%
 }
 
-.imgOwner{
-    width: 95%;
-    margin-left: 2%;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-.overlay {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-.imgContainer:hover .imgOwner{
-    opacity: 0.5;
-}
-
-.imgContainer:hover .overlay{
-  opacity: 1;
-}
-
 .w3-red:hover{
     background-color: #ff8080 !important;
     color:white !important;
