@@ -9,3 +9,14 @@ function resetFileImage( fileButtonId ) {
 	files[0].style.display = "block";
 	files[1].style.display = "none";
 }
+
+function rightButtonClicked( fileButtonId ) {
+	document.getElementsByClassName( "dropdown-content" )[0].style.display = "block";
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+	if( !event.target.matches('.dropdown-content') ) {
+		document.getElementsByClassName( "dropdown-content" )[0].style.display = "none";
+	}
+}

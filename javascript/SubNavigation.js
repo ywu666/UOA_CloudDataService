@@ -1,12 +1,15 @@
-function changeFolderDirectory( folderGoingInto ) {
-	// homepage: homepage-dropdown-button
-	// softeng350 folder: softeng350-path-button
+function goToRootDirectory() {
+	// change directory
+	document.getElementById( "softeng350-path-button" ).style.display = "none";
+	document.getElementById( "homepage-dropdown-button" ).style.display = "block";
 
-	let i;
-	const elements = document.getElementsByClassName("file-path");
-	for(i = 0; i < elements.length; i++ ) {
-		elements[i].style.display = "none";
-	}
+	// show quick access
+	document.getElementById( "quick-access-component" ).style.display = "block";
 
-	document.getElementById(folderGoingInto).style.display = "content";
+	// change folder displayed
+	document.getElementById( "route-folder-container" ).style.display = "flex";
+	document.getElementById( "softeng350-folder-container" ).style.display = "none";
+
+	// hide files
+	document.getElementById( "softeng-350-file-container" ).style.display = "none";
 }

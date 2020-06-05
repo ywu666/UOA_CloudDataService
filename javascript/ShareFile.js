@@ -14,5 +14,8 @@ function showOrHideRelatedFiles( buttonId ) {
 
 function hidePopup() {
 	document.getElementById("share-file-popup").style.display = "none";
-	console.log("blurrred")
+}
+
+function showPopup() {
+	document.getElementById("share-file-popup").style.display = "block";
 }
