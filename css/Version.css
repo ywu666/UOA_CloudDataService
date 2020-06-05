@@ -1,0 +1,16 @@
+.sidenav {
+    height: 100%;
+    width: 90px;
+    background-color: lightgray;
+}
+
+.sidenav a {
+    display: block;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sidenav a:hover {
+    background-color: darkgrey;
+}

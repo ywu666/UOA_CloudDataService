@@ -11,7 +11,7 @@ function goToRootDirectory() {
 	document.getElementById( "softeng350-folder-container" ).style.display = "none";
 
 	// hide files
-	document.getElementById( "softeng-350-file-section" ).style.display = "none";
+	document.getElementById( "file-section" ).style.display = "none";
 }
 
 function showFileRelationGraph() {

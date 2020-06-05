@@ -1,0 +1,26 @@
+<!-- Modal that pops up when you click on image icon" -->
+<div id="verion-popup" class="w3-modal" style="z-index:3; display: block">
+	<div class="w3-modal-content" style="padding-top: 20px; padding-right: 20px; padding-left: 20px; background-color:#e6e6e6; width: 600px">
+		<!--  title	-->
+		<h4>Previous version for draft.doc</h4>
+
+		<div class="w3-container" style="padding-left: 0; padding-right: 0">
+			<div class="sidenav w3-cell-top w3-cell">
+				<a id="version2-button" class="version-buttons" style="background-color: white" onclick="changeVersionDisplayed(this.id, 'version2-graph')">Version 2</a>
+				<a id="version1-button" class="version-buttons" onclick="changeVersionDisplayed(this.id, 'version1-graph')">Version 1</a>
+			</div>
+
+			<div class="w3-cell">
+				<img class="version-graphs" id="version2-graph" src="../resource/version2.png" style="width: 100%; height:300px">
+				<img class="version-graphs" id="version1-graph" src="../resource/version1.png" style="width: 100%; height:300px; display: none">
+			</div>
+		</div>
+
+		<div class="w3-panel">
+			<div class="w3-section w3-right">
+				<button class="w3-button w3-blue" onclick="hideVersion()">Close</i></button>
+<!--				<button id="share-related-graph-button" class="w3-button w3-blue" onclick="shareRelatedGraph()" disabled>Share<i class="fa fa-paper-plane" style="margin: auto 5px"></i></button>-->
+			</div>
+		</div>
+	</div>
+</div>
