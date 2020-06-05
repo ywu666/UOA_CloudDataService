@@ -39,7 +39,7 @@
 
 .fa-plus {
     color: darkblue;
-    margin: auto 5px;
+    margin: auto 5px auto 60px;
 }
 
 .flex-container {
@@ -63,6 +63,14 @@
 }
 
 #button-EN303,#button-SE350,#button-SE351,#button-SE364,#button-others,#button-previous, #button-star, #button-time,#button-trash{
-    height: 47px;
+    height: 50px;
+}
+
+#newFolder{
+    background-color: #e6f7ff;
+    border: 1px solid lightgrey;
+    border-radius:15px 50px;
+    margin: 10px 10px;
+    width: 220px;
 }
 
