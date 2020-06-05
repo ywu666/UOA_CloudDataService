@@ -1,9 +1,8 @@
 <!-- Modal that pops up when you click on image icon" -->
-<div id="file-relation-popup" class="w3-modal" style="z-index:4; display: block">
-	<div class="w3-modal-content" style="padding-top: 50px; padding-right: 20px; padding-left: 20px">
-		<i id="back-icon" class="fas fa-arrow-left w3-xlarge icon" onclick="showAllGraphs()"></i>
-
-		<div class="w3-container" style="background-color:white; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">
+<div id="file-relation-popup" class="w3-modal" style="z-index:4; display: block; ">
+	<div class="w3-modal-content" style="padding-top: 50px; padding-right: 20px; padding-left: 20px; background-color:#e6e6e6">
+		<div style="margin-bottom: 10px"><i id="back-icon" class="fas fa-arrow-left w3-xlarge icon" style="color:#3399ff" onclick="showAllGraphs()"></i></div>
+		<div class="w3-container">
 			<div id="draft-related-graph-container" class="w3-cell">
 				<p>Files related to draft.doc:</p>
 				<button class="graph-container" onclick="showDraftGraphOnly()">
@@ -12,17 +11,15 @@
 			</div>
 
 			<div id="slide-related-graph-container" class="w3-cell">
-				<p>File related to slides.ppt:</p>
-				<button class="graph-container">
+				<p id="p2">File related to slides.ppt:</p>
+				<button class="graph-container" onclick="showDraftGraphOnly()">
 					<img class="graphs" id="ppt-related-graph" src="../resource/share-related-file-all.png" style="width: 100%">
 				</button>
+
 			</div>
-
-
 		</div>
-
+		<h4 style="margin-bottom: 0; font-weight: bold;">In Folder SE350</h4>
 		<div class="w3-panel">
-			<p style="margin-bottom: 0">In Folder SE350</p>
 			<div class="w3-section w3-right">
 				<a class="w3-button w3-blue" onclick="hideFileRelationGraph()">Close</i></a>
 				<a class="w3-button w3-blue" onclick="hideFileRelationGraph()">Share<i class="fa fa-paper-plane" style="margin: auto 5px"></i></a>
