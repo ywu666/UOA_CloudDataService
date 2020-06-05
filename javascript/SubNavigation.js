@@ -13,3 +13,10 @@ function goToRootDirectory() {
 	// hide files
 	document.getElementById( "softeng-350-file-container" ).style.display = "none";
 }
+
+function showFileRelationGraph() {
+	// check which folder users are currently in
+
+	// display the popup if users are in softeng350 folder
+
+}

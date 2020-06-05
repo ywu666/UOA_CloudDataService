@@ -1,0 +1,21 @@
+.graph-container {
+    cursor: pointer;
+}
+
+.graph-container {
+    padding: 0 0 0 0;
+    border: 0;
+    background-color: lightgray;
+    outline: none;
+    cursor: pointer;
+}
+
+.graph-container:hover .graphs {
+    opacity: 0.5;
+}
+
+.fa-arrow-left {
+    margin-bottom: 20px;
+    color: black;
+    display: none;
+}
