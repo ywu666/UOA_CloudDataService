@@ -44,10 +44,6 @@ input:focus {
     background-color: lightgray;
 }
 
-.fa-question-circle {
-    /*margin-left: 50px;*/
-}
-
 .login {
     height: 50px;
     margin-left: 20px;

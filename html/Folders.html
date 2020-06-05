@@ -4,16 +4,45 @@
 	</p>
 
 	<div class="sort-container">
-		<button class="dropbtn sort-button">
+		<button class="dropbtn sort-button file-path-button">
 			Name
 		</button>
 		<i class="fas fa-arrow-up w3-large icon"></i>
 	</div>
 </div>
 
-<div class="folder-container">
-	<img class="folder" src="../resource/enggen303Folder.png">
-	<img class="folder" src="../resource/softeng350Folder.png">
-	<img class="folder" src="../resource/softeng351Folder.png">
-	<img class="folder" src="../resource/softeng364Folder.png">
+<!--folders in the root directory-->
+<div id="route-folder-container" class="folder-container">
+	<button onfocus="hoverFolderImage(this.id)" onblur="resetImage(this.id)" class="folder-button" id="enggen303-folder">
+		<img class="folder" id="enggen303" src="../resource/enggen303Folder.png">
+	</button>
+
+	<button ondblclick="openFolder(this.id)" onfocus="hoverFolderImage(this.id)" onblur="resetImage(this.id)" class="folder-button" id="softeng350-folder" >
+		<img class="folder" id="softeng350" src="../resource/softeng350Folder.png">
+	</button>
+
+	<button onfocus="hoverFolderImage(this.id)" onblur="resetImage(this.id)" class="folder-button" id="softeng351-folder">
+		<img class="folder" id="softeng351" src="../resource/softeng351Folder.png">
+	</button>
+
+	<button onfocus="hoverFolderImage(this.id)" onblur="resetImage(this.id)" class="folder-button" id="softeng364-folder">
+		<img class="folder" id="softeng364" src="../resource/softeng364Folder.png">
+	</button>
 </div>
+
+<!--folders inside softeng350-->
+<div id="softeng350-folder-container">
+	<button onfocus="hoverFolderImage(this.id)" onblur="resetImage(this.id)" class="folder-button" id="A1-folder">
+		<img class="folder" id="A1" src="../resource/enggen303Folder.png">
+	</button>
+
+	<button ondblclick="openFolder(this.id)" onfocus="hoverFolderImage(this.id)" onblur="resetImage(this.id)" class="folder-button" id="A2-folder" >
+		<img class="folder" id="A2" src="../resource/softeng350Folder.png">
+	</button>
+
+	<button onfocus="hoverFolderImage(this.id)" onblur="resetImage(this.id)" class="folder-button" id="A3-folder">
+		<img class="folder" id="A3" src="../resource/softeng351Folder.png">
+	</button>
+</div>
+
+

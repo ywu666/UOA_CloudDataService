@@ -12,12 +12,23 @@
     font-size: larger;
 }
 
-.folder-container {
+.folder-button {
     width: 230px;
     display: flex;
+    margin-left: 20px;
+    border: 0;
+    padding: 0;
+    outline: none;
 }
 
 .folder {
     width: 100%;
-    margin-left: 20px;
+}
+
+.folder-container {
+    display: flex;
+}
+
+#softeng350-folder-container {
+    display: none;
 }

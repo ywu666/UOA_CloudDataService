@@ -9,3 +9,7 @@
 .file-path-button:hover {
     background-color: lightgray;
 }
+
+#softeng350-path-button {
+    display: none;
+}
