@@ -28,8 +28,11 @@ function showPopup() {
 	document.getElementById("share-file-popup").style.display = "block";
 }
 
-function fileSuccessfullySharedAlert() {
+function fileSuccessfullySharedAlert( innerText ) {
 	// show the successful-shared-alert popup
+	const message = document.getElementById( "alert-message" );
+	message.innerText = innerText;
+
 	document.getElementById( "successful-shared-alert" ).style.display = "block";
 
 	// hide the popup after 1 second
@@ -37,4 +40,5 @@ function fileSuccessfullySharedAlert() {
 		document.getElementById( "successful-shared-alert" ).style.display = "none";
 	}, 2000);
 }
+
 

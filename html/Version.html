@@ -1,6 +1,8 @@
 <!-- Modal that pops up when you click on image icon" -->
 <div id="version-popup" class="w3-modal w3-animate-zoom" style="z-index:3; background-color: transparent">
 	<div class="w3-modal-content" style="padding-top: 20px; padding-right: 20px; padding-left: 20px; background-color:#e6e6e6; width: 600px">
+		<i class="fas fa-times w3-right w3-xlarge" onclick="hideVersion()"></i>
+
 		<!--  title	-->
 		<h4 id="version-title">Previous version for draft.doc</h4>
 
@@ -18,7 +20,7 @@
 
 		<div class="w3-panel">
 			<div class="w3-section w3-right">
-				<button class="w3-button w3-blue" onclick="hideVersion()">Close</i></button>
+				<button class="w3-button w3-blue" onclick="changeFileVersion()"></i>Go back to this version</button>
 				<button id="share-related-graph-button" class="w3-button w3-blue" onclick="showPopup()">Share<i class="fa fa-paper-plane" style="margin: auto 5px"></i></button>
 			</div>
 		</div>

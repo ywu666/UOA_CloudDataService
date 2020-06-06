@@ -21,3 +21,10 @@ function changeVersionDisplayed( buttonId, visibleGraphId ) {
 function hideVersion() {
 	document.getElementById( "version-popup" ).style.display = "none";
 }
+
+function changeFileVersion() {
+	hideVersion();
+
+	// show a file successfully replaced alert
+	fileSuccessfullySharedAlert( "File version successfully updated!" );
+}
