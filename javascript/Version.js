@@ -19,5 +19,5 @@ function changeVersionDisplayed( buttonId, visibleGraphId ) {
 }
 
 function hideVersion() {
-	document.getElementById( "verion-popup" ).style.display = "none";
+	document.getElementById( "version-popup" ).style.display = "none";
 }

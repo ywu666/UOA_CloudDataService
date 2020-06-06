@@ -16,7 +16,7 @@ function goToRootDirectory() {
 
 function showFileRelationGraph() {
 	// check which folder users are currently in
-	const files = document.getElementById( "softeng-350-file-section" );
+	const files = document.getElementById( "file-section" );
 
 	if( files.style.display !== "none" ) {
 		// display the popup if users are in softeng350 folder

@@ -9,9 +9,10 @@
 	<div id="softeng350-file-container" class="flex-container">
 		<div style="position: relative">
 			<button oncontextmenu="rightButtonClicked(this.id); return false" onfocus="hoverFileImage(this.id)"
-					onblur="resetFileImage(this.id)" class="file-button" id="softeng350-draft">
+					onblur="resetFileImage(this.id)" class="file-button" id="softeng350-draft" style="position:relative;">
 				<img class="file" id="draft-unclick" src="../resource/draftFile-unclick.png">
 				<img class="file" id="draft-click" style="display: none" src="../resource/draftFile-clicked.png">
+				<i class="fas fa-history w3-xlarge icon" onclick="showVersionPopup()" style="top: 0"></i>
 			</button>
 
 			<div class="dropdown-content" style="display: none; position: absolute">
@@ -21,9 +22,10 @@
 
 		<div style="position: relative; margin-left: 20px">
 			<button onfocus="hoverFileImage(this.id)"
-					onblur="resetFileImage(this.id)" class="file-button" id="softeng350-slides">
+					onblur="resetFileImage(this.id)" class="file-button" id="softeng350-slides" style="position: relative">
 				<img class="file" id="slide-unclick" src="../resource/slides.png">
 				<img class="file" id="slide-click" style="display: none" src="../resource/slides-clicked.png">
+				<i class="fas fa-history w3-xlarge icon" style="top: 0"></i>
 			</button>
 		</div>
 	</div>

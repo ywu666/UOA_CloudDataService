@@ -14,6 +14,11 @@ function rightButtonClicked( fileButtonId ) {
 	document.getElementsByClassName( "dropdown-content" )[0].style.display = "block";
 }
 
+function showVersionPopup() {
+	document.getElementById( "version-popup" ).style.display = "block";
+
+}
+
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
 	if( !event.target.matches('.dropdown-content') ) {
