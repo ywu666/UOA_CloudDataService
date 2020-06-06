@@ -19,7 +19,7 @@
 		</div>
 
 		<div style="position: relative; margin-left: 20px">
-			<button onfocus="hoverFileImage(this.id)"
+			<button oncontextmenu="rightButtonClicked(this.id); return false" onfocus="hoverFileImage(this.id)"
 					onblur="resetFileImage(this.id)" class="file-button" id="softeng350-slides" style="position: relative">
 				<img class="file" id="slide-unclick" src="../resource/slides.png">
 				<img class="file" id="slide-click" style="display: none" src="../resource/slides-clicked.png">
