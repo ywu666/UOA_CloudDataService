@@ -15,7 +15,7 @@ function openFolder( folderButtonId ) {
 		dirs[i].style.display = "none";
 	}
 
-	if( folderButtonId === "Softeng350-folder" || folderButtonId === "Enggen303-folder" || folderButtonId === "Softeng351-folder" || folderButtonId === "Softeng364-folder") {
+	if( folderButtonId === "Softeng350-folder" || folderButtonId === "Enggen303-folder" || folderButtonId === "Softeng351-folder" || folderButtonId === "Softeng364-folder" || folderButtonId === "Others-button" || folderButtonId === "Previous-button" || folderButtonId === "Recent-button" || folderButtonId === "Star-button" || folderButtonId === "Trash-button" ) {
 		//display the corresponding path button
 		const substr = folderButtonId.substr(0,folderButtonId.indexOf("-"));
 		btn = document.getElementById("folderNameButton")
@@ -31,27 +31,8 @@ function openFolder( folderButtonId ) {
 
 		//show files
 		document.getElementById( "file-section" ).style.display = "block";
+		document.getElementById("folders-tittle").style.justifyContent = "between";
 	}
 
-
-	if (folderButtonId === "A2-folder" || folderButtonId === "A1-folder" || folderButtonId === "A3-folder") {
-		//hide folders and title
-		document.getElementById("folders").style.display = "none";
-		document.getElementById("softeng350-folder-container").style.display = "none";
-
-	}
-
-
-	if (folderButtonId === "Others-button" || folderButtonId === "Previous-button" || folderButtonId === "History-button" || folderButtonId === "Star-button" || folderButtonId === "Trash-button"){
-		//display the path button
-		const substr = folderButtonId.substr(0,folderButtonId.indexOf("-"));
-		btn = document.getElementById("folderNameButton")
-		btn.innerHTML = substr + '<i class="fa fa-caret-down"></i>';
-		document.getElementById("softeng350-folder-path").style.display = "block";
-
-		//hide folders and title
-		document.getElementById("folders").style.display = "none";
-		document.getElementById("softeng350-folder-container").style.display = "none";
-	}
 
 }
