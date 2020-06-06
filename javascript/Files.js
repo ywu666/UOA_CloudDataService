@@ -14,7 +14,9 @@ function rightButtonClicked( fileButtonId ) {
 	document.getElementsByClassName( "dropdown-content" )[0].style.display = "block";
 }
 
-function showVersionPopup() {
+function showVersionPopup(iconId) {
+	const tittle = "Previous version for " + iconId;
+	document.getElementById("version-title").innerText = tittle;
 	document.getElementById( "version-popup" ).style.display = "block";
 
 }
