@@ -15,10 +15,10 @@ function openFolder( folderButtonId ) {
 		dirs[i].style.display = "none";
 	}
 
-	if( folderButtonId === "softeng350-folder" || folderButtonId === "enggen303-folder" || folderButtonId === "softeng351-folder" || folderButtonId === "softeng364-folder") {
+	if( folderButtonId === "Softeng350-folder" || folderButtonId === "Enggen303-folder" || folderButtonId === "Softeng351-folder" || folderButtonId === "Softeng364-folder") {
+		//display the corresponding path button
 		const substr = folderButtonId.substr(0,folderButtonId.indexOf("-"));
 		btn = document.getElementById("folderNameButton")
-
 		btn.innerHTML = substr + '<i class="fa fa-caret-down"></i>';
 		document.getElementById("softeng350-folder-path").style.display = "block";
 
@@ -40,6 +40,19 @@ function openFolder( folderButtonId ) {
 		document.getElementById("folders").style.display = "none";
 		document.getElementById("softeng350-folder-container").style.display = "none";
 
+	}
+
+
+	if (folderButtonId === "Others-button" || folderButtonId === "Previous-button" || folderButtonId === "History-button" || folderButtonId === "Star-button" || folderButtonId === "Trash-button"){
+		//display the path button
+		const substr = folderButtonId.substr(0,folderButtonId.indexOf("-"));
+		btn = document.getElementById("folderNameButton")
+		btn.innerHTML = substr + '<i class="fa fa-caret-down"></i>';
+		document.getElementById("softeng350-folder-path").style.display = "block";
+
+		//hide folders and title
+		document.getElementById("folders").style.display = "none";
+		document.getElementById("softeng350-folder-container").style.display = "none";
 	}
 
 }

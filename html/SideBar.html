@@ -11,7 +11,7 @@
 	</div>
 
 	<!--Softeng 350-->
-	<a id="button-SE350" onclick="myFunc('Demo1')" href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-light-blue">
+	<a id="button-SE350" onclick="openFolder('Softeng350-folder')" href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-light-blue">
 		<div class="flex-container">
 			<div class="triangle-right"></div>
 			<i class="fas fa-folder fa-2x w3-margin-left"></i><p class="folder-title">SOFTENG 350</p>
@@ -19,7 +19,7 @@
 	</a>
 
 	<!--Softeng 351-->
-	<a id="button-SE351" onclick="myFunc('Demo1')" href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-light-blue">
+	<a id="button-SE351" onclick="openFolder('Softeng351-folder')" href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-light-blue">
 		<div class="flex-container">
 			<div class="triangle-right"></div>
 			<i class="fas fa-folder fa-2x w3-margin-left"></i><p class="folder-title">SOFTENG 351</p>
@@ -27,7 +27,7 @@
 	</a>
 
 	<!--  Softeng 364-->
-	<a id="button-SE364" onclick="myFunc('Demo1')" href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-light-blue">
+	<a id="button-SE364" onclick="openFolder('Softeng364-folder')" href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-light-blue">
 		<div class="flex-container">
 			<div class="triangle-right"></div>
 			<i class="fas fa-folder fa-2x w3-margin-left"></i><p class="folder-title">SOFTENG 364</p>
@@ -35,7 +35,7 @@
 	</a>
 
 	<!--Enggen 303-->
-	<a id="button-EN303" onclick="myFunc('Demo1')" href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-light-blue">
+	<a id="button-EN303" onclick="openFolder('Enggen303-folder')" href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-light-blue">
 		<div class="flex-container">
 			<div class="triangle-right"></div>
 			<i class="fas fa-folder fa-2x w3-margin-left"></i><p class="folder-title">ENGGEN 303</p>
@@ -45,7 +45,7 @@
 	<hr class="break">
 
 	<!--Others -->
-	<a id="button-others" onclick="myFunc('Demo1')" href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-light-blue">
+	<a id="Others-button" onclick="openFolder(this.id)" href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-light-blue">
 		<div class="flex-container">
 			<div class="triangle-right other-folder-triangle"></div>
 			<i class="fas fa-folder fa-2x w3-margin-left fa-folder-other"></i><p class="folder-title">Others</p>
@@ -53,7 +53,7 @@
 	</a>
 
 	<!-- Previous -->
-	<a id="button-previous" onclick="myFunc('Demo1')" href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-light-blue">
+	<a id="Previous-button" onclick="openFolder(this.id)" href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-light-blue">
 		<div class="flex-container">
 			<div class="triangle-right other-folder-triangle"></div>
 			<i class="fas fa-folder fa-2x w3-margin-left fa-folder-other"></i><p class="folder-title">Previous</p>
@@ -61,7 +61,7 @@
 	</a>
 
 	<hr class="break">
-	<a id="button-time" href="#" class="w3-bar-item w3-button w3-hover-light-blue"><i class="far fa-clock fa-2x w3-margin-right"></i>Recent</a>
-	<a id="button-star" href="#" class="w3-bar-item w3-button w3-hover-light-blue" style="padding: 12px"><i class="fas fa-star fa-2x w3-margin-right"></i>Starred</a>
-	<a id="button-trash" href="#" class="w3-bar-item w3-button w3-hover-light-blue"><i class="fa fa-trash fa-2x w3-margin-right"></i> Bin</a>
+	<a id="History-button" href="#" class="w3-bar-item w3-button w3-hover-light-blue" onclick="openFolder(this.id)"><i class="far fa-clock fa-2x w3-margin-right"></i>Recent</a>
+	<a id="Star-button" href="#" class="w3-bar-item w3-button w3-hover-light-blue" style="padding: 12px" onclick="openFolder(this.id)"><i class="fas fa-star fa-2x w3-margin-right"></i>Starred</a>
+	<a id="Trash-button" href="#" class="w3-bar-item w3-button w3-hover-light-blue" onclick="openFolder(this.id)"><i class="fa fa-trash fa-2x w3-margin-right"></i> Bin</a>
 </nav>
