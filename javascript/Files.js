@@ -10,8 +10,13 @@ function resetFileImage( fileButtonId ) {
 	files[1].style.display = "none";
 }
 
-function rightButtonClicked( fileButtonId ) {
-	document.getElementsByClassName( "dropdown-content" )[0].style.display = "block";
+function rightButtonClicked( dropdownContentId ) {
+	// hide all dropdownContent first
+	document.getElementsByClassName( "dropdown-content" )[0].style.display = "none";
+	document.getElementsByClassName( "dropdown-content" )[1].style.display = "none";
+
+	// display the one near the clicked file
+	document.getElementById( dropdownContentId ).style.display = "block"
 }
 
 function showVersionPopup(iconId) {
@@ -25,5 +30,6 @@ function showVersionPopup(iconId) {
 window.onclick = function(event) {
 	if( !event.target.matches('.dropdown-content') ) {
 		document.getElementsByClassName( "dropdown-content" )[0].style.display = "none";
+		document.getElementsByClassName( "dropdown-content" )[1].style.display = "none";
 	}
 }

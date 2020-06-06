@@ -9,8 +9,8 @@ function showDraftGraphOnly() {
 	// place the graph in the middle
 	document.getElementById( "draft-related-graph-container" ).classList.remove( "w3-cell" );
 	const button  = document.getElementsByClassName( "graph-container" )[0];
-	button.style.marginLeft = "20%";
-	button.style.marginRight = "20%";
+	button.style.marginLeft = "150px";
+	button.style.marginRight = "150px";
 
 	// enable the share button
 	document.getElementById( "share-related-graph-button" ).disabled = false;

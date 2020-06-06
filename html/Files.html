@@ -6,25 +6,29 @@
 	<!--files in the softeng 350 folder-->
 	<div id="softeng350-file-container" class="flex-container">
 		<div style="position: relative">
-			<button oncontextmenu="rightButtonClicked(this.id); return false" onfocus="hoverFileImage(this.id)"
+			<button oncontextmenu="rightButtonClicked('draft-dropdown-content'); return false" onfocus="hoverFileImage(this.id)"
 					onblur="resetFileImage(this.id)" class="file-button" id="softeng350-draft" style="position:relative;">
 				<img class="file" id="draft-unclick" src="../resource/draftFile-unclick.png">
 				<img class="file" id="draft-click" style="display: none" src="../resource/draftFile-clicked.png">
 				<i id="draft.doc" class="fas fa-history w3-xlarge icon" onclick="showVersionPopup(this.id)" style="top: 0"></i>
 			</button>
 
-			<div class="dropdown-content" style="display: none; position: absolute">
+			<div id="draft-dropdown-content" class="dropdown-content" style="display: none; position: absolute">
 				<a href="#" onclick="showPopup()"><i class="fas fa-user-alt"></i>Share</a>
 			</div>
 		</div>
 
 		<div style="position: relative; margin-left: 20px">
-			<button oncontextmenu="rightButtonClicked(this.id); return false" onfocus="hoverFileImage(this.id)"
+			<button oncontextmenu="rightButtonClicked('slides-dropdown-content'); return false" onfocus="hoverFileImage(this.id)"
 					onblur="resetFileImage(this.id)" class="file-button" id="softeng350-slides" style="position: relative">
 				<img class="file" id="slide-unclick" src="../resource/slides.png">
 				<img class="file" id="slide-click" style="display: none" src="../resource/slides-clicked.png">
 				<i id="slides.ppt" class="fas fa-history w3-xlarge icon" onclick="showVersionPopup(this.id)" style="top: 0"></i>
 			</button>
+
+			<div id="slides-dropdown-content" class="dropdown-content" style="display: none; position: absolute">
+				<a href="#" onclick="showPopup()"><i class="fas fa-user-alt"></i>Share</a>
+			</div>
 		</div>
 	</div>
 </div>
