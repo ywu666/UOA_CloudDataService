@@ -1,6 +1,6 @@
 function goToRootDirectory() {
 	// change directory
-	document.getElementById( "softeng350-path-button" ).style.display = "none";
+	document.getElementById( "softeng350-folder-path" ).style.display = "none";
 	document.getElementById( "homepage-dropdown-button" ).style.display = "block";
 
 	// show quick access

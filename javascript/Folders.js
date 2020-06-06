@@ -15,9 +15,12 @@ function openFolder( folderButtonId ) {
 		dirs[i].style.display = "none";
 	}
 
-	if( folderButtonId === "softeng350-folder" ) {
-		const visibleDir = document.getElementById( "softeng350-path-button" );
-		visibleDir.style.display = "block";
+	if( folderButtonId === "softeng350-folder" || folderButtonId === "enggen303-folder" || folderButtonId === "softeng351-folder" || folderButtonId === "softeng364-folder") {
+		const substr = folderButtonId.substr(0,folderButtonId.indexOf("-"));
+		btn = document.getElementById("folderNameButton")
+
+		btn.innerHTML = substr + '<i class="fa fa-caret-down"></i>';
+		document.getElementById("softeng350-folder-path").style.display = "block";
 
 		// hide quick access
 		document.getElementById( "quick-access-component" ).style.display = "none";
@@ -29,6 +32,14 @@ function openFolder( folderButtonId ) {
 		//show files
 		console.log(document.getElementById( "softeng-350-file-section" ));
 		document.getElementById( "softeng-350-file-section" ).style.display = "block";
+	}
+
+
+	if (folderButtonId === "A2-folder" || folderButtonId === "A1-folder" || folderButtonId === "A3-folder") {
+		//hide folders and title
+		document.getElementById("folders").style.display = "none";
+		document.getElementById("softeng350-folder-container").style.display = "none";
+
 	}
 
 }

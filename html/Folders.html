@@ -1,4 +1,4 @@
-<div class="flex-container" style="justify-content: space-between">
+<div id = "folders" class="flex-container" style="justify-content: space-between">
 	<p class="sub-title">
 		Folders
 	</p>
@@ -13,7 +13,7 @@
 
 <!--folders in the root directory-->
 <div id="route-folder-container" class="folder-container">
-	<button onfocus="hoverFolderImage(this.id)" onblur="resetImage(this.id)" class="folder-button" id="enggen303-folder">
+	<button ondblclick="openFolder(this.id)" onfocus="hoverFolderImage(this.id)" onblur="resetImage(this.id)" class="folder-button" id="enggen303-folder">
 		<img class="folder" id="enggen303" src="../resource/enggen303Folder.png">
 	</button>
 
@@ -21,18 +21,18 @@
 		<img class="folder" id="softeng350" src="../resource/softeng350Folder.png">
 	</button>
 
-	<button onfocus="hoverFolderImage(this.id)" onblur="resetImage(this.id)" class="folder-button" id="softeng351-folder">
+	<button ondblclick="openFolder(this.id)"  onfocus="hoverFolderImage(this.id)" onblur="resetImage(this.id)" class="folder-button" id="softeng351-folder">
 		<img class="folder" id="softeng351" src="../resource/softeng351Folder.png">
 	</button>
 
-	<button onfocus="hoverFolderImage(this.id)" onblur="resetImage(this.id)" class="folder-button" id="softeng364-folder">
+	<button ondblclick="openFolder(this.id)"  onfocus="hoverFolderImage(this.id)" onblur="resetImage(this.id)" class="folder-button" id="softeng364-folder">
 		<img class="folder" id="softeng364" src="../resource/softeng364Folder.png">
 	</button>
 </div>
 
 <!--folders inside softeng350-->
 <div id="softeng350-folder-container">
-	<button onfocus="hoverFolderImage(this.id)" onblur="resetImage(this.id)" class="folder-button" id="A1-folder">
+	<button ondblclick="openFolder(this.id)"  onfocus="hoverFolderImage(this.id)" onblur="resetImage(this.id)" class="folder-button" id="A1-folder">
 		<img class="folder" id="A1" src="../resource/assignment1.png">
 	</button>
 
@@ -40,7 +40,7 @@
 		<img class="folder" id="A2" src="../resource/assignment2.png">
 	</button>
 
-	<button onfocus="hoverFolderImage(this.id)" onblur="resetImage(this.id)" class="folder-button" id="A3-folder">
+	<button ondblclick="openFolder(this.id)"  onfocus="hoverFolderImage(this.id)" onblur="resetImage(this.id)" class="folder-button" id="A3-folder">
 		<img class="folder" id="A3" src="../resource/assignment3.png">
 	</button>
 </div>
