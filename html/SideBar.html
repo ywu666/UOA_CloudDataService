@@ -6,12 +6,12 @@
 		</div>
 	</a>
 
-	<div style="display: flex" id="newFolder" onclick="myFunc('Demo1')" class="w3-button w3-hover-light-grey">
+	<div style="display: flex" id="newFolder" class="w3-button w3-hover-light-grey">
 		<i class="fas fa-plus fa-2x"></i> <h2>New</h2>
 	</div>
 
 	<!--Enggen 303-->
-	<a id="button-EN303" onclick="openFolder('Enggen303-folder')" href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-light-blue">
+	<a id="button-EN303" onclick="openFolder('Enggen303-folder'); changeSideBarButtonColor(this.id)" href="javascript:void(0)" class="side-bar-button w3-bar-item w3-button w3-hover-light-blue">
 		<div class="flex-container">
 			<div class="triangle-right"></div>
 			<i class="fas fa-folder fa-2x w3-margin-left"></i><p class="folder-title">ENGGEN 303</p>
@@ -19,7 +19,9 @@
 	</a>
 
 	<!--Softeng 350-->
-	<a id="button-SE350" onclick="openFolder('Softeng350-folder'); ToggleExpandContact(this.id,'softeng350-folder-expand')" class="w3-bar-item w3-button w3-hover-light-blue">
+	<a id="button-SE350" onclick="openFolder('Softeng350-folder'); changeSideBarButtonColor(this.id);
+		ToggleExpandContact(this.id,'softeng350-folder-expand')"
+	   	class="side-bar-button w3-bar-item w3-button w3-hover-light-blue">
 		<div class="flex-container">
 			<div id="softeng350-folder-triangle" class="triangle-right"></div>
 			<i class="fas fa-folder fa-2x w3-margin-left"></i><p class="folder-title">SOFTENG 350</p>
@@ -28,19 +30,21 @@
 
 	<!--softeng 350 expand-->
 	<div id="softeng350-folder-expand" style="padding-left: 8px; display: none">
-		<a class="w3-bar-item w3-button w3-hover-light-blue">
+		<a id="button-SE350-A1" class="side-bar-button w3-bar-item w3-button w3-hover-light-blue" onclick="changeSideBarButtonColor(this.id)">
 			<div class="flex-container">
 				<div class="triangle-right"></div>
 				<i class="fas fa-folder w3-xlarge w3-margin-left"></i><p class="folder-title">Assignment 1</p>
 			</div>
 		</a>
-		<a class="w3-bar-item w3-button w3-hover-light-blue">
+		<a id="button-SE350-A2" class="side-bar-button w3-bar-item w3-button w3-hover-light-blue"
+		   onclick="changeSideBarButtonColor(this.id)">
 			<div class="flex-container">
 				<div class="triangle-right"></div>
 				<i class="fas fa-folder w3-xlarge w3-margin-left"></i><p class="folder-title">Assignment 2</p>
 			</div>
 		</a>
-		<a class="w3-bar-item w3-button w3-hover-light-blue">
+		<a id="button-SE350-A3" class="side-bar-button w3-bar-item w3-button w3-hover-light-blue"
+		   onclick="changeSideBarButtonColor(this.id)">
 			<div class="flex-container">
 				<div class="triangle-right"></div>
 				<i class="fas fa-folder w3-xlarge w3-margin-left"></i><p class="folder-title">Assignment 3</p>
@@ -49,7 +53,7 @@
 	</div>
 
 	<!--Softeng 351-->
-	<a id="button-SE351" onclick="openFolder('Softeng351-folder')" href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-light-blue">
+	<a id="button-SE351" onclick="openFolder('Softeng351-folder'); changeSideBarButtonColor(this.id)" href="javascript:void(0)" class="side-bar-button w3-bar-item w3-button w3-hover-light-blue">
 		<div class="flex-container">
 			<div class="triangle-right"></div>
 			<i class="fas fa-folder fa-2x w3-margin-left"></i><p class="folder-title">SOFTENG 351</p>
@@ -57,7 +61,7 @@
 	</a>
 
 	<!--  Softeng 364-->
-	<a id="button-SE364" onclick="openFolder('Softeng364-folder')" href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-light-blue">
+	<a id="button-SE364" onclick="openFolder('Softeng364-folder'); changeSideBarButtonColor(this.id)" href="javascript:void(0)" class="side-bar-button w3-bar-item w3-button w3-hover-light-blue">
 		<div class="flex-container">
 			<div class="triangle-right"></div>
 			<i class="fas fa-folder fa-2x w3-margin-left"></i><p class="folder-title">SOFTENG 364</p>
@@ -68,7 +72,7 @@
 	<hr class="break">
 
 	<!--Others -->
-	<a id="Others-button" onclick="openFolder(this.id)" href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-light-blue">
+	<a id="Others-button" onclick="openFolder(this.id); changeSideBarButtonColor(this.id)" href="javascript:void(0)" class="side-bar-button w3-bar-item w3-button w3-hover-light-blue">
 		<div class="flex-container">
 			<div class="triangle-right other-folder-triangle"></div>
 			<i class="fas fa-folder fa-2x w3-margin-left fa-folder-other"></i><p class="folder-title">Others</p>
@@ -76,7 +80,7 @@
 	</a>
 
 	<!-- Previous -->
-	<a id="Previous-button" onclick="openFolder(this.id)" href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-light-blue">
+	<a id="Previous-button" onclick="openFolder(this.id); changeSideBarButtonColor(this.id)" href="javascript:void(0)" class="side-bar-button w3-bar-item w3-button w3-hover-light-blue">
 		<div class="flex-container">
 			<div class="triangle-right other-folder-triangle"></div>
 			<i class="fas fa-folder fa-2x w3-margin-left fa-folder-other"></i><p class="folder-title">Previous</p>
@@ -84,7 +88,16 @@
 	</a>
 
 	<hr class="break">
-	<a id="Recent-button" href="#" class="w3-bar-item w3-button w3-hover-light-blue" onclick="openFolder(this.id)"><i class="far fa-clock fa-2x w3-margin-right"></i>Recent</a>
-	<a id="Star-button" href="#" class="w3-bar-item w3-button w3-hover-light-blue" style="padding: 12px" onclick="openFolder(this.id)"><i class="fas fa-star fa-2x w3-margin-right"></i>Starred</a>
-	<a id="Trash-button" href="#" class="w3-bar-item w3-button w3-hover-light-blue" onclick="openFolder(this.id)"><i class="fa fa-trash fa-2x w3-margin-right"></i> Bin</a>
+	<a id="Recent-button" href="#" class="side-bar-button w3-bar-item w3-button w3-hover-light-blue"
+	   onclick="openFolder(this.id); changeSideBarButtonColor(this.id)">
+		<i class="far fa-clock fa-2x w3-margin-right"></i>Recent
+	</a>
+	<a id="Star-button" href="#" class="side-bar-button w3-bar-item w3-button w3-hover-light-blue"
+	   style="padding: 12px" onclick="openFolder(this.id); changeSideBarButtonColor(this.id)">
+		<i class="fas fa-star fa-2x w3-margin-right"></i>Starred
+	</a>
+	<a id="Trash-button" href="#" class="side-bar-button w3-bar-item w3-button w3-hover-light-blue"
+	   onclick="openFolder(this.id); changeSideBarButtonColor(this.id)">
+		<i class="fa fa-trash fa-2x w3-margin-right"></i> Bin
+	</a>
 </nav>
