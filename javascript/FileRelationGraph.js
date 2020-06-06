@@ -14,13 +14,16 @@ function showDraftGraphOnly() {
 
 	// enable the share button
 	document.getElementById( "share-related-graph-button" ).disabled = false;
-	console.log(document.getElementById("share-related-graph-button"))
-	console.log(document.getElementById( "share-related-graph-button" ).disabled)
 }
 
 function showAllGraphs() {
+	// hide the back button
 	document.getElementById( "back-icon" ).style.display = "none";
+
+	// display all graphs except the empty graph
+	document.getElementById( "draft-related-graph-container" ).style.display = "table-cell";
 	document.getElementById( "slide-related-graph-container" ).style.display = "table-cell";
+	document.getElementById( "empty-container" ).style.display = "none";
 
 	document.getElementById( "draft-related-graph-container" ).classList.add( "w3-cell" );
 	const button  = document.getElementsByClassName( "graph-container" )[0];
@@ -36,4 +39,14 @@ function shareRelatedGraph() {
 
 	// expand the related graph
 	showOrHideRelatedFiles( "share-all-file-button" );
+}
+
+function showEmptyGraph() {
+	// hide all graphs, display only the empty one
+	document.getElementById( "draft-related-graph-container" ).style.display = "none";
+	document.getElementById( "slide-related-graph-container" ).style.display = "none";
+	document.getElementById( "empty-container" ).style.display = "block";
+
+	// hide the text showing folder directory
+	document.getElementById( "file-position" ).style.display = "none";
 }

@@ -28,3 +28,12 @@
 .p2{
     margin-top: 20px;
 }
+
+#empty-container {
+    display: block;
+    height: 400px;
+    width: 100%;
+    padding-top: 120px;
+    text-align: center;
+    color: grey;
+}

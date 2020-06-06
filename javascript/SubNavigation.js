@@ -15,12 +15,16 @@ function goToRootDirectory() {
 }
 
 function showFileRelationGraph() {
-	// check which folder users are currently in
+	// check if users are in the softeng-350 folder
 	const files = document.getElementById( "file-section" );
 
 	if( files.style.display !== "none" ) {
 		// display the popup if users are in softeng350 folder
 		document.getElementById( "file-relation-popup" ).style.display = "block";
 		showAllGraphs();
+	} else {
+		// assume users are in root folder
+		document.getElementById( "file-relation-popup" ).style.display = "block";
+		showEmptyGraph();
 	}
 }
