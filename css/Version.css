@@ -1,7 +1,7 @@
 .sidenav {
     height: 100%;
     width: 90px;
-    background-color: lightgray;
+    background-color: #b3d9ff;
 }
 
 .sidenav a {
@@ -12,5 +12,10 @@
 }
 
 .sidenav a:hover {
-    background-color: darkgrey;
+    background-color: #4d94ff;
+}
+
+.w3-container{
+    padding-left: 0;
+    padding-right: 0;
 }

@@ -31,3 +31,8 @@
     margin-right: 20px;
 }
 
+.fa-history:hover{
+    background-color: transparent;
+   color:#4d94ff;
+}
+

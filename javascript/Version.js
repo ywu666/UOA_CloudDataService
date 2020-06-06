@@ -9,7 +9,7 @@ function changeVersionDisplayed( buttonId, visibleGraphId ) {
 		graphs[i].style.display = "none";
 		console.log("graph " + graphs[i].style.display)
 		// change background color of all button to lightgray
-		buttons[i].style.backgroundColor = "lightgray";
+		buttons[i].style.backgroundColor = "#b3d9ff";
 		console.log("button " + buttons[i].style.backgroundColor)
 
 	}
