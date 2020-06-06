@@ -21,7 +21,7 @@
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-right:10px solid blue;
+    border-right: 10px solid blue;
 }
 
 .fa-folder {
@@ -62,7 +62,7 @@
 
 }
 
-#button-EN303,#button-SE350,#button-SE351,#button-SE364,#button-others,#button-previous, #button-star, #button-time,#button-trash{
+#button-EN303,#button-SE350,#button-SE351,#button-SE364,#Others-button,#Previous-button, #Star-button, #Recent-button,#Trash-button{
     height: 50px;
 }
 
