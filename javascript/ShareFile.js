@@ -27,3 +27,14 @@ function hidePopup() {
 function showPopup() {
 	document.getElementById("share-file-popup").style.display = "block";
 }
+
+function fileSuccessfullySharedAlert() {
+	// show the successful-shared-alert popup
+	document.getElementById( "successful-shared-alert" ).style.display = "block";
+
+	// hide the popup after 1 second
+	setTimeout(function(){
+		document.getElementById( "successful-shared-alert" ).style.display = "none";
+	}, 2000);
+}
+

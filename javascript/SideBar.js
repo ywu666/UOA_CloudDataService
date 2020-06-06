@@ -1,5 +1,5 @@
-function ToggleExpandContact( buttonId, explandContactId ) {
-	const content = document.getElementById( explandContactId );
+function ToggleExpandContact( buttonId, expandContactId ) {
+	const content = document.getElementById( expandContactId );
 	const button = document.getElementById( buttonId );
 	const flexContainer = button.getElementsByClassName( "flex-container" )[0];
 	if( content.style.display === "none" ) {
