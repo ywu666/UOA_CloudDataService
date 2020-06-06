@@ -49,4 +49,10 @@ function showEmptyGraph() {
 
 	// hide the text showing folder directory
 	document.getElementById( "file-position" ).style.display = "none";
+
+	// hide the back button
+	document.getElementById( "back-icon" ).style.display = "none";
+
+	// disable share button
+	document.getElementById( "share-related-graph-button" ).disabled = true;
 }
