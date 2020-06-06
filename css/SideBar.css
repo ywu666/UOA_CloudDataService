@@ -12,6 +12,16 @@
     margin-bottom: auto;
 }
 
+.triangle-bottom {
+    width: 0;
+    height: 0;
+    border-top: 10px solid darkblue;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 .other-folder-triangle {
     border-left: 10px solid black;
 }

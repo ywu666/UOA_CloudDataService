@@ -10,13 +10,43 @@
 		<i class="fas fa-plus fa-2x"></i> <h2>New</h2>
 	</div>
 
-	<!--Softeng 350-->
-	<a id="button-SE350" onclick="openFolder('Softeng350-folder')" href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-light-blue">
+	<!--Enggen 303-->
+	<a id="button-EN303" onclick="openFolder('Enggen303-folder')" href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-light-blue">
 		<div class="flex-container">
 			<div class="triangle-right"></div>
+			<i class="fas fa-folder fa-2x w3-margin-left"></i><p class="folder-title">ENGGEN 303</p>
+		</div>
+	</a>
+
+	<!--Softeng 350-->
+	<a id="button-SE350" onclick="openFolder('Softeng350-folder'); ToggleExpandContact(this.id,'softeng350-folder-expand')" class="w3-bar-item w3-button w3-hover-light-blue">
+		<div class="flex-container">
+			<div id="softeng350-folder-triangle" class="triangle-right"></div>
 			<i class="fas fa-folder fa-2x w3-margin-left"></i><p class="folder-title">SOFTENG 350</p>
 		</div>
 	</a>
+
+	<!--softeng 350 expand-->
+	<div id="softeng350-folder-expand" style="padding-left: 8px; display: none">
+		<a class="w3-bar-item w3-button w3-hover-light-blue">
+			<div class="flex-container">
+				<div class="triangle-right"></div>
+				<i class="fas fa-folder w3-xlarge w3-margin-left"></i><p class="folder-title">Assignment 1</p>
+			</div>
+		</a>
+		<a class="w3-bar-item w3-button w3-hover-light-blue">
+			<div class="flex-container">
+				<div class="triangle-right"></div>
+				<i class="fas fa-folder w3-xlarge w3-margin-left"></i><p class="folder-title">Assignment 2</p>
+			</div>
+		</a>
+		<a class="w3-bar-item w3-button w3-hover-light-blue">
+			<div class="flex-container">
+				<div class="triangle-right"></div>
+				<i class="fas fa-folder w3-xlarge w3-margin-left"></i><p class="folder-title">Assignment 3</p>
+			</div>
+		</a>
+	</div>
 
 	<!--Softeng 351-->
 	<a id="button-SE351" onclick="openFolder('Softeng351-folder')" href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-light-blue">
@@ -34,13 +64,6 @@
 		</div>
 	</a>
 
-	<!--Enggen 303-->
-	<a id="button-EN303" onclick="openFolder('Enggen303-folder')" href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-light-blue">
-		<div class="flex-container">
-			<div class="triangle-right"></div>
-			<i class="fas fa-folder fa-2x w3-margin-left"></i><p class="folder-title">ENGGEN 303</p>
-		</div>
-	</a>
 
 	<hr class="break">
 
