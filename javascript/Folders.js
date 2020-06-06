@@ -29,6 +29,11 @@ function openFolder( folderButtonId ) {
 		document.getElementById( "route-folder-container" ).style.display = "none";
 		document.getElementById( "softeng350-folder-container" ).style.display = "flex";
 
+		// hide files
+		document.getElementById( "file-section" ).style.display = "none";
+	}
+
+	if( folderButtonId === "Softeng350-folder" ) {
 		//show files
 		document.getElementById( "file-section" ).style.display = "block";
 		document.getElementById("folders-tittle").style.justifyContent = "between";
