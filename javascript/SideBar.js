@@ -1,8 +1,13 @@
-function ToggleExpandContact( buttonId, expandContactId ) {
+// expand/collapse the folder button in the side bar
+// because this is a prototype, this function only works on softeng350 button
+function ToggleExpandContent(buttonId, expandContactId ) {
 	const content = document.getElementById( expandContactId );
 	const button = document.getElementById( buttonId );
 	const flexContainer = button.getElementsByClassName( "flex-container" )[0];
+
+	// if the button is not expanded
 	if( content.style.display === "none" ) {
+		// display the expanded result
 		content.style.display = "block";
 
 		// change the direction of the triangle beside the folder
@@ -13,6 +18,7 @@ function ToggleExpandContact( buttonId, expandContactId ) {
 		flexContainer.style.paddingLeft = "10px";
 
 	} else {
+		// if the button is already expanded, collapse the content
 		content.style.display = "none";
 
 		// change the direction of the triangle beside the folder
@@ -24,17 +30,18 @@ function ToggleExpandContact( buttonId, expandContactId ) {
 	}
 }
 
+// change background color of the button clicked
+// buttonId: id of the button clicked
 function changeSideBarButtonColor( buttonId ) {
-	// change the background color of this button
+
+	// get all buttons in the side bar
 	const buttons = document.getElementsByClassName( "side-bar-button" );
+
 	for( let i = 0; i < buttons.length; i++ ) {
-		// change background color of all buttons to the default one
+		// reset the background color
 		buttons[i].style.backgroundColor = "#b3d9ff";
 	}
 
 	// update the background color of the button clicked
-	console.log( buttonId )
-	console.log(document.getElementById( buttonId ).style.backgroundColor)
 	document.getElementById( buttonId ).style.backgroundColor = "#87CEEB";
-	console.log(document.getElementById( buttonId ).style.backgroundColor)
 }
