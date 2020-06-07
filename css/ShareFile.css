@@ -13,17 +13,6 @@
     display: flex;
 }
 
-.dropbtn {
-    background-color: transparent;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-}
-
-.dropbtn:hover {
-    background: darkgrey;
-}
-
 .copy-link-button {
     background-color: #1a75ff;
     color:white;

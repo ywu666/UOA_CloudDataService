@@ -340,9 +340,11 @@
           <div class="flex-container share-link-container">
             <div class="link-container">
               <p style="color: gray; margin: auto 0 auto 10px">Anyone with the link</p>
-              <button class="dropbtn">Can view
-                <i class="fas fa-sort-down"></i>
-              </button>
+              <select id="dropbtn" class="w3-select w3-border" name="option" style="width: 15%; background-color: darkgray; text-align-last:center; outline: none;">
+                <option value="View">Can view</option>
+                <option value="comment">Can comment</option>
+                <option value="edit">Can edit</option>
+              </select>
             </div>
             <button class="copy-link-button">
               Copy Link
