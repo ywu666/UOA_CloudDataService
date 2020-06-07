@@ -15,7 +15,6 @@ function openFolder( folderButtonId ) {
 		dirs[i].style.display = "none";
 	}
 
-	if( folderButtonId === "Softeng350-folder" || folderButtonId === "Enggen303-folder" || folderButtonId === "Softeng351-folder" || folderButtonId === "Softeng364-folder" || folderButtonId === "Others-button" || folderButtonId === "Previous-button" || folderButtonId === "Recent-button" || folderButtonId === "Star-button" || folderButtonId === "Trash-button" ) {
 		//display the corresponding path button
 		const substr = folderButtonId.substr(0,folderButtonId.indexOf("-"));
 		btn = document.getElementById("folderNameButton")
@@ -31,7 +30,7 @@ function openFolder( folderButtonId ) {
 
 		// hide files
 		document.getElementById( "file-section" ).style.display = "none";
-	}
+
 
 	if( folderButtonId === "Softeng350-folder" ) {
 		//show files
