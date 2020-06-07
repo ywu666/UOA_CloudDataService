@@ -32,9 +32,6 @@ function showAllGraphs() {
 
 	// disable the share button
 	document.getElementById( "share-related-graph-button" ).disabled = true;
-
-	// show file directory
-	document.getElementById( "file-position" ).style.display = "block";
 }
 
 function shareRelatedGraph() {
